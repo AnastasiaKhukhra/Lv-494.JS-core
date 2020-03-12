@@ -8,3 +8,4 @@ var user = {
    undefined: empty,
    null: n,
 };
+console.log(user);

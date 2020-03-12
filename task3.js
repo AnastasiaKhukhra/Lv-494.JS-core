@@ -1,5 +1,7 @@
 let a = 3;
 let b = "hello";
-console.log(a, b);
+alert(a);
+alert(b);
 a = b;
-console.log(a, b);
+alert(a);
+alert(a);
