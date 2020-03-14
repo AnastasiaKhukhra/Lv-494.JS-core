@@ -15,6 +15,5 @@ console.log(arr); */
 //TASK 4
 
 /* let cities = ["Rome", "Lviv", "Warsaw"];
-let newCities = [];
-newCities[0] = cities[0] + "*" + cities[1] + "*" + cities[2];
+let newCities = cities.join('*');
 console.log(newCities); */
