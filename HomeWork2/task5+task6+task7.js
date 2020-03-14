@@ -40,32 +40,46 @@ if (check) {
 
 //TASK 7 METHOD 1
 /* var x = new Date().getHours();
-if ((x >= 23) || (x < 5)) {
-    alert("Доброї ночі");
-} else if ((x >= 5) || (x < 11)) {
+if ((x >= 5) && (x < 11)) {
     alert("Доброго ранку");
-} else ((x >= 11) || (x < 17)) {
+} else if ((x >= 11) && (x < 17)) {
     alert("Доброго дня");
-} else {
+} else if ((x >= 17) && (x < 23)) {
     alert("Доброго вечора");
+} else {
+    alert("Доброї ночі");
 }; */
 
 
 //TASK 7 METHOD 2
-/* var x = new Date().getHours();
-switch (x) {
-    case ((x >= 23) || (x < 5)):
-        alert("Доброї ночі");
-        break;
-    case ((x >= 5) || (x < 11)):
-        alert("Доброго ранку");
-        break;
-    case ((x >= 11) || (x < 17)):
-        alert("Доброго ранку");
-        break;
-    default:
-        alert("Доброго вечора");
-}; */
 
+/* switch (new Date().getHours()) {
+    case 5:
+    case 6:
+    case 7:
+    case 8:
+    case 9:
+    case 10:
+            alert("Доброго ранку");
+            break;
+    case 11:
+    case 12:
+    case 13:
+    case 14:
+    case 15:
+    case 16:
+            alert("Доброго дня");
+            break;
+    case 17:
+    case 18:
+    case 19:
+    case 20:
+    case 21:
+    case 22:
+            alert("Доброго вечора");
+            break;
+    default:
+            alert("Доброї ночі");
+}; */
 
 
