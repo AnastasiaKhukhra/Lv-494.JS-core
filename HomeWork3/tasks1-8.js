@@ -85,11 +85,11 @@ findUnique([1, 2, 3, 5, 3]);*/
     if (k === undefined) {
         k = 1;
      };
-        while (k !== 0) {
-            arr = arr.splice(-k);
-            k--;
-            return arr;
-        }
+    while (k !== 0) {
+        arr = arr.splice(-k);
+        k--;
+        return arr;
+    }
 }
 console.log(lastElem([3, 4, 10, -5],2));   // [10, -5] */
 
