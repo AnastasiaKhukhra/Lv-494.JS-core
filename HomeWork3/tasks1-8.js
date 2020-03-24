@@ -36,7 +36,6 @@ console.log(res);*/
     }
     console.log(x);
 };
-
 randArray(10); */
 
 //TASK 4
@@ -52,7 +51,6 @@ raiseToDegree(3, 4); */
 /*function findMin1() {
     return Math.min.apply(null, arguments);
 };
-
 findMin1(12, 14, 4, -4, 0.2); */
 
 /* function findMin2() {
@@ -64,7 +62,6 @@ findMin1(12, 14, 4, -4, 0.2); */
     }
     return min;
 };
-
 findMin2(12, 14, 4, -4, 0.2); */
 
 //TASK 6
@@ -77,7 +74,6 @@ findMin2(12, 14, 4, -4, 0.2); */
     }
     return true;
 };
-
 findUnique([1, 2, 3, 5, 3]);*/
 
 //TASK 7
@@ -103,5 +99,4 @@ console.log(lastElem([3, 4, 10, -5],2));   // [10, -5] */
     };
     return res;
 };
-
 upperCase('i love java script'); */
