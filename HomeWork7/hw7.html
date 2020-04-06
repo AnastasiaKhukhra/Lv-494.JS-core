@@ -1,0 +1,164 @@
+<!DOCTYPE html>   <!--6,7-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+
+        <!--TASK 2-->
+        <!-- <p id = "text">I learning JavaScript events!</p> 
+        <div>
+	          <button onclick="changeCSS()">Change style!</button>
+        </div> -->
+
+        <!--TASK 3-->
+        <!--<button onclick="blue()">Click to make the page blue.</button>
+
+        <button ondblclick="pink()">Double-click to make the page pink.</button>
+
+        <button onmousedown="brown()" onmouseup="white()">Click and hold to make the page brown.</button>
+
+        <a href = "" onmouseenter="yellow()" onmouseleave="white()">Hover over to make page yellow.</a> -->
+        
+        <!--TASK 4-->
+        <!--<select id="mySelect">
+          <option>Peter</option>
+          <option>John</option>
+          <option>Alice</option>
+          <option>Alex</option>
+          <option>Iren</option>
+        </select>
+        <button onclick="deleteItem()">Choose and Delete</button>-->
+
+        <!--TASK 5-->
+        <!--<button id="myBtn">Live button</button>
+        <div id = "add"></div>-->
+
+        <!--TASK 6-->
+        <!--<div id = "size"></div>-->
+
+        <!--TASK 7-->
+        <!--<select id="myCountries">
+          <option value="Germany">Germany</option>
+          <option value="USA">USA</option>
+          <option value="Ukraine">Ukraine</option>
+        </select>
+        <select id="myCities"></select>
+        <p id="paste"></p>-->
+
+        <script>
+          //TASK 1
+          /*let openTab = window.open("", "", `width=300,height=300`);
+          setTimeout(function(){openTab.resizeTo(500, 500)}, 2000);
+          setTimeout(function(){openTab.moveTo(200, 200)}, 4000);
+          setTimeout(function(){openTab.close()}, 6000);*/
+
+          //TASK 2
+          /* function changeCSS() {
+            document.getElementById("text").style = "color: orange; font-size: 20px; font-family: 'Comic Sans MS'";
+          };*/
+
+          //TASK 3
+          /*function blue() {
+            document.body.style.backgroundColor = "blue";
+          };
+          function pink() {
+            document.body.style.backgroundColor = "pink";
+          };
+          function brown() {
+            document.body.style.backgroundColor = "brown";
+          };
+          function white() {
+            document.body.style.backgroundColor = "white";
+          };
+          function yellow() {
+            document.body.style.backgroundColor = "yellow";
+          };*/
+          
+          //TASK 4
+          /*function deleteItem() {
+            var select = document.getElementById("mySelect");
+            select.remove(select.selectedIndex);
+          };*/      
+
+          //TASK 5
+          /*function message1() {
+            document.getElementById("add").innerHTML += "<p>I was pressed!</p>"; 
+          };
+          function message2() {
+            document.getElementById("add").innerHTML += "<p>Mouse on me!</p>";
+          }; 
+          function message3() {
+            document.getElementById("add").innerHTML += "<p>Mouse is not on me!</p>";
+          };               
+          myBtn.addEventListener("click", message1); 
+          myBtn.addEventListener("mouseenter", message2); 
+          myBtn.addEventListener("mouseleave", message3);*/
+
+          //TASK 6
+          /*function showWindowSize() {
+            document.getElementById("size").innerHTML = 
+            "Weight: " + window.innerWidth + ", Height: " + window.innerHeight;
+          }
+          window.addEventListener("load", showWindowSize);
+          window.addEventListener("resize", showWindowSize);*/
+
+          //TASK 7
+          /*function getCitiesForCountry(country) {
+            let cities = [];
+            switch (country) {
+              case "Ukraine":
+                cities.push("Lviv", "Ternopil", "Kyiv");
+                break;
+              case "USA":
+                cities.push("New York", "Washington", "Boston", "Chicago");
+                break;
+              case "Germany":
+                cities.push("Berlin", "Munich", "Hamburg");
+                break;
+            }
+            return cities;
+          }
+
+          function removeOptions(selectElement) {
+            var i, L = selectElement.options.length - 1;
+            for(i = L; i >= 0; i--) {
+              selectElement.remove(i);
+            }
+          }
+          
+          function add() {
+            let sel = document.getElementById("myCountries");
+            let opt = sel.options[sel.selectedIndex];
+            let cities = getCitiesForCountry(opt.value)
+            let city = document.getElementById("myCities");
+            removeOptions(city);
+            let i = 0;
+            for (i in cities) {
+              var option = document.createElement("option");
+              option.text = cities[i];
+              option.value = cities[i];
+              city.add(option);
+            };
+          };
+
+          function printCountryCity() {
+            var country = document.getElementById("myCountries").value;
+            var city = document.getElementById("myCities").value;
+            document.getElementById("paste").innerHTML = country + ", " + city;
+          }
+
+          myCountries.addEventListener("click", add);
+          myCountries.addEventListener("click", printCountryCity); 
+          myCities.addEventListener("click", printCountryCity);*/
+
+          
+    </script> 
+  </body>
+</html>
+
+
+
+
+
+
