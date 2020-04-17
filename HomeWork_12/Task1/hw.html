@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <body>
+
+    <button type="button" onclick="load()" id="change">Vote!</button>
+
+    <script>
+      function load() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("change").innerHTML = this.responseText + new Date();
+          }
+        };
+        xhttp.open("GET", "data.txt", true);
+        xhttp.send();
+      }
+    </script>
+  </body>
+</html>
