@@ -7,7 +7,6 @@ let downGameBorder = game.offsetHeight - 70;
 function counter() {
   let counter = document.getElementById("points");
   counter.textContent = Number(counter.textContent) + 1;
-  console.log(counter.textContent); 
 }
 
 
@@ -65,11 +64,6 @@ function changePosition() {
       clearInterval(moving);
       let points = document.getElementById("points").textContent;
       alert(`Your points: ${points}`);
-      //addStartAgain();
-      /*let startAgain = document.querySelector(".wrapper1");
-      //startAgain.style.textContent = "Start again";
-      startAgain.style.display = "block";
-      button.addEventListener("click", start);*/
       window.location.reload();
     }
   })
@@ -105,18 +99,11 @@ let moving = setInterval(generateAnimal, 2000);
 function start() {
   let start = document.querySelector(".wrapper1");
   setInterval(update, 10);
-  //setInterval(generateAnimal, 2000);
   moving;
   start.style.display = 'none';
 }
 
 button.addEventListener("click", start);
-
-
-/*function addStartAgain() {
-  startAgain = document.querySelector(".wrapper1");
-  startAgain.innerHTML = "<button type='button' onclick='start()'>Start again</button>";
-}*/
 
 
 window.onload = setBox;
