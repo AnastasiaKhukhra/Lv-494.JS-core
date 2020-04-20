@@ -1,0 +1,92 @@
+body {
+  background-color: #ffb2a7;
+  margin: 0;
+}
+
+#game {
+  background-color: #cbe2b0;
+  width: 50%;
+  height: 100vh;
+  margin: auto;
+  border-width: medium;
+  border-left: solid #cd8d7b;
+  border-right: solid #cd8d7b;
+}
+
+
+.wrapper1 {
+  text-align: center;
+}
+
+.button {
+  top: 30%;
+  left: 45%;
+  display: inline-block;
+  border-radius: 5px;
+  background-color: #cd8d7b;
+  border: 100%;
+  color: rgba(255, 255, 255);
+  text-align: center;
+  font-size: 100%;
+  padding: 20px;
+  width: 10%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  position: absolute;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.counter {
+  text-align: center;
+  border: 3px solid #cd8d7b;
+  border-radius: 15%;
+  width: 10%;
+  background-color: #ffb2a7;
+  color: rgb(255, 255, 255);
+}
+
+.wrapper { 
+  overflow: hidden; 
+  display: block; 
+  width: 100%;
+} 
+
+.box {
+  background-image: url("box.png");
+  width: 90px;
+  height: 70px;
+  position: absolute;
+}
+
+.animal {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: absolute;
+}
+
